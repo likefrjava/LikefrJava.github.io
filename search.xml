@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>java -关于short的报错</title>
+      <link href="/2019/02/24/7/"/>
+      <url>/2019/02/24/7/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Likefr</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">short</span> k=<span class="number">1</span>;  <span class="comment">//申明变量</span></span><br><span class="line">k=k+<span class="number">50</span>;   <span class="comment">// 这段代码报错 因为不能从 int 转换为 short</span></span><br><span class="line">System.out.println(k);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://ws1.sinaimg.cn/large/00676n0Tgy1g0hj9k2py3j30h10k6js4.jpg" alt></p><h2 id="解决方法如下"><a href="#解决方法如下" class="headerlink" title="解决方法如下"></a>解决方法如下</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Likefr</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="keyword">short</span> k=<span class="number">1</span>;</span><br><span class="line">k +=<span class="number">50</span>;</span><br><span class="line">System.out.println(k);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://ws2.sinaimg.cn/large/00676n0Tgy1g0hja8prn3j30eq0lomxp.jpg" alt></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java -Scanner类</title>
       <link href="/2019/02/24/6/"/>
       <url>/2019/02/24/6/</url>
